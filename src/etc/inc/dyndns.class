@@ -1817,7 +1817,7 @@
 					curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($body));
 					break;
 				case 'desec':
-					curl_setopt($ch, CURLOPT_URL, 'https://update.dedyn.io/?hostname=' . $this->_dnsHost . '&myipv4=' . $this->_dnsIP . '&myipv4=preserve');
+					curl_setopt($ch, CURLOPT_URL, 'https://update.dedyn.io/?hostname=' . $this->_dnsHost . '&myipv4=' . $this->_dnsIP . '&myipv6=preserve');
 					curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: Token ' . $this->_dnsPass));
 					break;
 				case 'desec-v6':
